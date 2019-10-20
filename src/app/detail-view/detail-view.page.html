@@ -1,0 +1,22 @@
+<style type="text/css">
+img {
+   background-image: url('../../assets/loader.gif')
+}
+</style>
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="padding-left: 30px;">Sub Breeds</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let data of breedsWithDetail">
+    <ion-card-header>
+      <ion-card-title>{{data.breed}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+    <img  [src]="data.image" style="height:100px;width:100px"/>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

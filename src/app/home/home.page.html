@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Famous Dog Breeds
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-list>
+    <ion-item *ngFor="let dog of breedList" style="cursor: pointer;">
+      <ion-label (click)="onBreedSelection(dog)">{{dog}}</ion-label>
+    </ion-item>
+  </ion-list>
+  </div>
+</ion-content>
